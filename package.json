@@ -1,0 +1,19 @@
+{
+    "name": "flina_express",
+    "version": "1.0.0",
+    "description": "Maked by Pedro.",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon app/app.js"
+    },
+    "author": "qinglin",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.1",
+        "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.3"
+    }
+}
