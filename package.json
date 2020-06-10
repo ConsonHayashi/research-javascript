@@ -1,6 +1,5 @@
-
 {
-    "name": "flina_http",
+    "name": "tarot_card",
     "version": "1.0.0",
     "description": "Maked by Pedro.",
     "main": "app.js",
@@ -10,8 +9,7 @@
     "author": "qinglin",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.17.1",
-        "hbs": "^4.1.1"
+        "express": "^4.17.1"
     },
     "devDependencies": {
         "nodemon": "^1.19.3"

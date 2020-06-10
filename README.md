@@ -1,8 +1,14 @@
-# FlinaExpress 
+# FlinaTarotCard
 
-A init express.
+A express website.
 
 ## Run
-
+        git clone https://github.com/PedroEast/FlinaTarotCard.git
         npm i
-        npm run dev
+        srceen -s FlinaTarotCard
+        sudo npm run dev
+        ctrl + a + d
+
+## todo
+- mysql service
+- Angular admin
