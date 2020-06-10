@@ -1,24 +1,32 @@
 // this is app.js. Myprogram will start with here.
-// import lib
 const path = require('path')
 const express = require('express')
-const hbs = require('hbs')
-// import define
-const getRouter = require('./appGet')
 
-// code here
+const hbs = require('hbs')
+
+const router = require('./appGet')
 const app= express();
+
 const port = 3000
 const viewsFolder = path.join(__dirname, 'views')
 const staticFolder = path.join(__dirname, 'static')
 
+// app.set('port', process.env.PROT || port)
 app.set('views',viewsFolder)
 app.set('view engine', 'html')
 app.engine('html', hbs.__express)
 
 app.use(express.static(staticFolder)); console.log(`The app has static folder which root is static.`)
-app.use(getRouter)
+// app.use(express.favicon())
+// app.use(express.logger('dev'))
+// app.use(express.bodyParser())
+// app.use(express.methodOverride())
+// app.use(app.router)
 
+app.use(router)
+
+
+// app.listen(app.get('port'))
 app.listen(port);
 console.log(`The app is running at http://localhost:${port}.`)
 
